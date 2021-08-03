@@ -5,13 +5,32 @@
 //futuramente vou fazer um upgrade desse sistema e deixar ele mais dinâmico, fazendo um botão para dar uma velocidade randomica para o veiculo e apartir da velocidade o script continuar normalmente o seu ciclo 
 
 
-var velocidadeMax = 60
+
+
+
+
+var velocidadeMax = 80
+
+var nomeVia = Array('Via Urbana' , 'Via Arterial', 'Via Coletora','Via Local', 'Via Rodovia')
+
+
 
 
 
 function sistema(){
-   var velocidade = window.document.getElementById('velocidade').value
 
+var velocidade = window.document.getElementById('velocidade').value
+
+var res = document.getElementById('res') 
    
-   
+
+   var res = document.getElementById('res') 
+
+
+    if ( velocidade >= velocidadeMax ) {
+        
+
+        res.innerHTML += `Você está a ${velocidade} em uma ${nomeVia[0]} <p>`
+    }
+
 }
