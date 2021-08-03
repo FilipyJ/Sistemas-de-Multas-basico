@@ -12,5 +12,6 @@ var velocidadeMax = 60
 function sistema(){
    var velocidade = window.document.getElementById('velocidade').value
 
-   console.log(velocidade)
+   
+   
 }
