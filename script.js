@@ -11,6 +11,8 @@
 
 var velocidadeMax = 80
 
+var velocidadeMin = 40
+
 
 
 
@@ -37,12 +39,22 @@ var res = document.getElementById('res')
 
 
     if ( velocidade >= velocidadeMax ) {
-        
+      alert('MULTADO!!')  
+     res.innerHTML += `Você estava a <b>${velocidade}km/hr</b> em uma ${nomeVia[0]} e foi MULTADO!. <p>`
 
-        res.innerHTML += `Você está a <b>${velocidade}km/hr</b> em uma ${nomeVia[0]} <p>`
-    }else if (velocidade >= 50 && velocidade < velocidadeMax ){
-        
-        res.innerHTML += `Você está  a ${velocidade} numa ${nomeVia[1]} permite até ${velocidadeMax}`
+     res.innerHTML += ``
+   }else if (velocidade >= 70 && velocidade < velocidadeMax){
+   
+   res.innerHTML +=  ` <b>ATENÇÃO!!</b> Você está  a <b>${velocidade}km/hr</b> numa ${nomeVia[0]} que permite até <b>${velocidadeMax} km/hr</b> <p> <hr>`
+} else if ( velocidade < velocidadeMin) {
+    res.innerHTML += ` <p> Você está andando muito devagar em uma <b>${nomeVia[0]}</b> que tem como velocidade mínima <b>${velocidadeMin}km/hr</b>. <hr> `
+} else {
+    res.innerHTML += `Velocidade Atual: <b>${velocidade}km/hr</b><p> <mark> Você está na velocidade permitida da via.</p> </mark>  <mark>Lembre-se de usar o cinto de segurança! </mark> <hr>`
 }
 
-}
+    
+
+
+
+
+} 
