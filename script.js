@@ -11,7 +11,14 @@
 
 var velocidadeMax = 80
 
+
+
+
+
+
 var nomeVia = Array('Via Urbana' , 'Via Arterial', 'Via Coletora','Via Local', 'Via Rodovia')
+
+
 
 
 
@@ -27,10 +34,15 @@ var res = document.getElementById('res')
    var res = document.getElementById('res') 
 
 
+
+
     if ( velocidade >= velocidadeMax ) {
         
 
-        res.innerHTML += `Você está a ${velocidade} em uma ${nomeVia[0]} <p>`
-    }
+        res.innerHTML += `Você está a <b>${velocidade}km/hr</b> em uma ${nomeVia[0]} <p>`
+    }else if (velocidade >= 50 && velocidade < velocidadeMax ){
+        
+        res.innerHTML += `Você está  a ${velocidade} numa ${nomeVia[1]} permite até ${velocidadeMax}`
+}
 
 }
