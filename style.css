@@ -55,7 +55,53 @@ span{
     border: 1px solid red;
     margin-top: 10px;
     padding: 12px;
-    background: darkcyan;
+    margin-left: 5px;
+    background: rgb(0, 255, 76);
+    border-radius: 15px;
+    font-size: 13px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+#button3{
+
+    border: 1px solid red;
+    margin-top: 10px;
+    padding: 12px;
+    margin-left: 10em;
+    background: rgb(14, 0, 77);
+    border-radius: 15px;
+    font-size: 13px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+#button4{
+
+    border: 1px solid red;
+    margin-top: 10px;
+    padding: 12px;
+    margin-left: 10em;
+    background: rgb(145, 255, 0);
+    border-radius: 15px;
+    font-size: 13px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+#button5{
+
+    border: 1px solid red;
+    margin-top: 10px;
+    padding: 12px;
+    margin-left: 10em;
+    background: rgb(255, 0, 0);
+    border-radius: 15px;
+    font-size: 13px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+#button6{
+
+    border: 1px solid red;
+    margin-top: 10px;
+    padding: 12px;
+    margin-left: 10em;
+    background: rgb(66, 0, 28);
     border-radius: 15px;
     font-size: 13px;
     font-family:Verdana, Geneva, Tahoma, sans-serif
@@ -73,5 +119,9 @@ h4{
     padding: 0px;
 
     margin: 0px;
+
+    font-size: 20px;
+
+
 }
 

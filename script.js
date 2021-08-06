@@ -20,6 +20,7 @@ var velocidadeMin = 40
 
 
 
+
 var nomeVia = Array('Via Urbana' , 'Via Arterial', 'Via Coletora','Via Local', 'Via Rodovia')
 
 
@@ -54,6 +55,39 @@ var res = document.getElementById('res')
     res.innerHTML += `Velocidade Atual: <b>${velocidade}km/hr</b><p> <mark> Você está na velocidade permitida da via.</p> </mark>  <mark>Lembre-se de usar o cinto de segurança! </mark> <hr>`
 }
 
-    
 
 } 
+
+function sistema2(){
+  var showText =  document.getElementById('showText')
+
+  showText.innerHTML = 'Urbana '
+
+  
+
+  
+}
+function sistema3(){
+  var showText = document.querySelector('#showText')
+
+  showText.textContent = ' de Transito Rápido '
+}
+
+function sistema4(){
+  var showText = document.getElementById('showText')
+
+  showText.textContent = 'Arterial '
+}
+
+function sistema5(){
+  var showText = document.getElementById('showText')
+
+  showText.textContent = 'Coletora '
+}
+
+function sistema6(){
+  var showText = document.getElementById('showText')
+
+  showText.textContent = 'Locais '
+}
+

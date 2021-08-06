@@ -29,14 +29,22 @@
                 motocicletas; Para estradas: 60 km/h para todos os veículos.</p>    
     
 <div class="container"> 
-    <span> Velocidade do Carro em vias  <span class="span1" > Urbanas </span>: <input  placeholder="Velocidade do Veículo" id="velocidade" type="number"><b> Km/hr</b></span> 
+    <span> Velocidade do Carro em vias  <span  class="span1" id="showText" > Urbana </span>: <input  placeholder="Velocidade do Veículo" id="velocidade" type="number"><b> Km/hr</b></span> 
     
     <Button id="button1" onclick="sistema1()">Verificar</Button>
     
     <h4>Selecione uma via </h4>
     
-    <div class="botao2">
-    <Button id="button2" onclick="sistema2()">Verificar</Button>
+    <div>
+    <Button id="button2" onclick="sistema2()">Urbana</Button>
+    
+    <Button id="button3" onclick="sistema3()">Transito Rápido</Button>
+
+    <Button id="button4" onclick="sistema4()">Arterial</Button>
+
+    <Button id="button5" onclick="sistema5()">Coletora</Button>
+
+    <Button id="button6" onclick="sistema6()">Local</Button>
     </div>
 
 </div>
