@@ -10,63 +10,45 @@
 
 
 
+// var nomeVia = Array('Via Urbana' , 'Via Arterial', 'Via Coletora','Via Local', 'Via Rodovia')
+
+// var showText =  document.getElementById('showText')
 
 var velocidadeMax = 80
 
 var velocidadeMin = 40
 
+var velocidade = document.getElementById('velocidade').value
 
 
-
-
-
-
-var nomeVia = Array('Via Urbana' , 'Via Arterial', 'Via Coletora','Via Local', 'Via Rodovia')
-
-
-
-
-
-
-
-function sistema1(){
-
-var velocidade = window.document.getElementById('velocidade').value
-
-var res = document.getElementById('res') 
+ function acao1 
+// var res = document.getElementById('res') 
    
-
-   var res = document.getElementById('res') 
-
+// var res = document.getElementById('res') 
 
 
 
-    if ( velocidade >= velocidadeMax ) {
-      alert('MULTADO!!')  
-     res.innerHTML += `Você estava a <b>${velocidade}km/hr</b> em uma ${nomeVia[0]} e foi MULTADO!. <p>`
+function mostrarUrbana(){
 
-     res.innerHTML += ``
-   }else if (velocidade >= 70 && velocidade < velocidadeMax){
-   
-   res.innerHTML +=  ` <b>ATENÇÃO!!</b> Você está  a <b>${velocidade}km/hr</b> numa ${nomeVia[0]} que permite até <b>${velocidadeMax} km/hr</b> <p> <hr>`
-} else if ( velocidade < velocidadeMin) {
-    res.innerHTML += ` <p> Você está andando muito devagar em uma <b>${nomeVia[0]}</b> que tem como velocidade mínima <b>${velocidadeMin}km/hr</b>. <hr> `
-} else {
-    res.innerHTML += `Velocidade Atual: <b>${velocidade}km/hr</b><p> <mark> Você está na velocidade permitida da via.</p> </mark>  <mark>Lembre-se de usar o cinto de segurança! </mark> <hr>`
-}
-
+  showText.innerHTML = 'Urbana '
 
 } 
 
 function sistema2(){
-  var showText =  document.getElementById('showText')
 
-  showText.innerHTML = 'Urbana '
 
-  
 
   
+    // if (velocidade <= velocidadeMin){
+    
+    // }
+
 }
+
+
+
+
+
 function sistema3(){
   var showText = document.querySelector('#showText')
 

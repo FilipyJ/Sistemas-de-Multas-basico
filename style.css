@@ -38,7 +38,7 @@ span{
 
 }
 
-#button1 {
+#Verificar {
 
     
     padding: 12px;
@@ -50,7 +50,7 @@ span{
     
 }
 
-#button2{
+#Urbana{
 
     border: 1px solid red;
     margin-top: 10px;
@@ -61,7 +61,7 @@ span{
     font-size: 13px;
     font-family:Verdana, Geneva, Tahoma, sans-serif
 }
-#button3{
+#TransitoRapido{
 
     border: 1px solid red;
     margin-top: 10px;
@@ -72,7 +72,7 @@ span{
     font-size: 13px;
     font-family:Verdana, Geneva, Tahoma, sans-serif
 }
-#button4{
+#Arterial{
 
     border: 1px solid red;
     margin-top: 10px;
@@ -83,7 +83,7 @@ span{
     font-size: 13px;
     font-family:Verdana, Geneva, Tahoma, sans-serif
 }
-#button5{
+#Coletora{
 
     border: 1px solid red;
     margin-top: 10px;
@@ -95,7 +95,7 @@ span{
     font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
-#button6{
+#Local{
 
     border: 1px solid red;
     margin-top: 10px;
