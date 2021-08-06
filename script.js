@@ -5,6 +5,8 @@
 //futuramente vou fazer um upgrade desse sistema e deixar ele mais dinâmico, fazendo um botão para dar uma velocidade randomica para o veiculo e apartir da velocidade o script continuar normalmente o seu ciclo 
 
 
+// Hoje dia 05/08/21 eu passei a manhã tentando entender o setInterval pra aplicar a função "Calculando" após clicar no botão "Verificar" a função consistirá em aparecer uma palavra escrito ' Calculando... ' e logo após irá aparecer a respectiva condição que o usuario escolheu. 
+
 
 
 
@@ -26,7 +28,7 @@ var nomeVia = Array('Via Urbana' , 'Via Arterial', 'Via Coletora','Via Local', '
 
 
 
-function sistema(){
+function sistema1(){
 
 var velocidade = window.document.getElementById('velocidade').value
 
@@ -53,8 +55,5 @@ var res = document.getElementById('res')
 }
 
     
-
-
-
 
 } 

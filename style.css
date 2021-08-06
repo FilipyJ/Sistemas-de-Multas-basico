@@ -17,7 +17,7 @@ h1 {
 .container{
 
 
-    padding-left: 500px;
+    padding-left: 0px;
 }
 
 .explica1 {
@@ -38,17 +38,27 @@ span{
 
 }
 
-button {
+#button1 {
+
+    
     padding: 12px;
     background: darkcyan;
     border-radius: 15px;
-    border: 0px;
+    border: 1px solid red;
     font-size: 13px;
     font-family:Verdana, Geneva, Tahoma, sans-serif
     
+}
 
+#button2{
 
-    
+    border: 1px solid red;
+    margin-top: 10px;
+    padding: 12px;
+    background: darkcyan;
+    border-radius: 15px;
+    font-size: 13px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
 #velocidade {
@@ -57,5 +67,11 @@ button {
     background: rgba(245, 245, 245, 0.883);
     font-size: 12px;
     
+}
+
+h4{
+    padding: 0px;
+
+    margin: 0px;
 }
 
