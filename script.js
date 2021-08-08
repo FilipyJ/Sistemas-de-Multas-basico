@@ -25,14 +25,20 @@
 
  var velocidade = document.getElementById('velocidade').value
 
- var Urbana = document.getElementById('Urbana')
+// var urbana = document.getElementById('Urbana').value
 
- var x = 0 
+ var x = 6
 
 
 function mostrarUrbana(){
-  showText.innerHTML = 'Urbana '
+
+showText.innerHTML = 'Urbana '
+
 }
+
+
+
+
 
 
 
@@ -53,14 +59,20 @@ function Verificar(){
 
 
       'Via que passou: '  + nomeVia[0] + '<p>'
+
+      showText.innerHTML = ''
       
      },700)
 
     
   
   } 
+
+  //   setTimeout(function(){
+        
+  //   },6000) 
   
-  }
+  // }
 
 
 
@@ -89,3 +101,4 @@ function Verificar(){
 // }
 
 
+}
