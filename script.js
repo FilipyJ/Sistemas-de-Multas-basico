@@ -40,6 +40,9 @@ function mostrarArterial(){
   showText.innerHTML = 'Arteriais '
 }
 
+function mostrarColetora(){
+  showText.innerHTML = 'Coletora '
+}
 
 
 
@@ -121,8 +124,38 @@ function Verificar(){
   alert('ALTA VELOCIDADE, MULTADO! ')
   res.innerHTML += 'A ' + nomeVia[1] + ' tem como velocidade máxima ' + velocidadeMax + ' Km/hr' + '<p> '
   }
-}//FIM DA FUNÇÃO ARTERIAIS
+}//FIM DA FUNÇÃO ARTERIAIS\\
 
+if(showText.innerHTML == 'Coletora ' && velocidade != ''){
+
+  let velocidadeMax = 40
+ 
+  let velocidadeMin = 20
+ 
+    console.log('No bloco de Coletora, velocidade maxima vale: ' + velocidadeMax)
+ 
+   setTimeout(function(){ res.innerHTML += 'Velocidade Atual: ' + velocidade  + '<br>' + 
+ 
+ 
+ 
+    'Via que passou: '  + nomeVia[2] + '<p>'  + '<hr>' 
+ 
+    showText.innerHTML = ''
+ 
+     
+    
+   },700)
+ 
+   setTimeout(function(){
+     let velocidade = document.getElementById('velocidade').value = ''
+   },600)
+   if (velocidade <= velocidadeMin){
+     res.innerHTML += ' Você está andando muito devagar em uma ' + nomeVia[2] + ', Você foi multado.' + '<br />'
+   }else if (velocidade >= velocidadeMax){
+   alert('ALTA VELOCIDADE, MULTADO! ')
+   res.innerHTML += 'A ' + nomeVia[2] + ' tem como velocidade máxima ' + velocidadeMax + ' Km/hr' + '<p> '
+   }
+ }//FIM DA FUNÇÃO COLETORAS
 
 
 
