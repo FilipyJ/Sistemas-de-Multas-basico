@@ -44,6 +44,10 @@ function mostrarColetora(){
   showText.innerHTML = 'Coletora '
 }
 
+function mostrarLocal(){
+  showText.innerHTML = 'Local '
+}
+
 
 
 
@@ -156,6 +160,36 @@ if(showText.innerHTML == 'Coletora ' && velocidade != ''){
    res.innerHTML += 'A ' + nomeVia[2] + ' tem como velocidade máxima ' + velocidadeMax + ' Km/hr' + '<p> '
    }
  }//FIM DA FUNÇÃO COLETORAS
+ if(showText.innerHTML == 'Local ' && velocidade != ''){
+
+  let velocidadeMax = 30 
+ 
+  let velocidadeMin = 15
+ 
+    console.log('No bloco de via local, velocidade maxima vale: ' + velocidadeMax)
+ 
+   setTimeout(function(){ res.innerHTML += 'Velocidade Atual: ' + velocidade  + '<br>' + 
+ 
+ 
+ 
+    'Via que passou: '  + nomeVia[3] + '<p>'  + '<hr>' 
+ 
+    showText.innerHTML = ''
+ 
+     
+    
+   },700)
+ 
+   setTimeout(function(){
+     let velocidade = document.getElementById('velocidade').value = ''
+   },600)
+   if (velocidade <= velocidadeMin){
+     res.innerHTML += ' Você está andando muito devagar em uma ' + nomeVia[3] + ', Você foi multado.' + '<br />'
+   }else if (velocidade >= velocidadeMax){
+   alert('ALTA VELOCIDADE, MULTADO! ')
+   res.innerHTML += 'A ' + nomeVia[3] + ' tem como velocidade máxima ' + velocidadeMax + ' Km/hr' + '<p> '
+   }
+ }//Fim DA FUNÇÃO LOCAL
 
 
 
