@@ -61,17 +61,7 @@ span{
     font-size: 13px;
     font-family:Verdana, Geneva, Tahoma, sans-serif
 }
-#TransitoRapido{
 
-    border: 1px solid red;
-    margin-top: 10px;
-    padding: 12px;
-    margin-left: 10em;
-    background: rgb(14, 0, 77);
-    border-radius: 15px;
-    font-size: 13px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
-}
 #Arterial{
 
     border: 1px solid red;
@@ -124,4 +114,6 @@ h4{
 
 
 }
+
+
 

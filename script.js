@@ -15,9 +15,9 @@
 
 // // var showText =  document.getElementById('showText')
 
- var velocidadeMax = 80
+ var velocidadeMax = 0
 
- var velocidadeMin = 40
+ var velocidadeMin = 0
 
  var nomeVia = Array('Via Urbana' , 'Via Arterial', 'Via Coletora','Via Local', 'Via Rodovia')
 
@@ -36,6 +36,10 @@ showText.innerHTML = 'Urbana '
 
 }
 
+function mostrarArterial(){
+  showText.innerHTML = 'Arteriais '
+}
+
 
 
 
@@ -43,30 +47,125 @@ showText.innerHTML = 'Urbana '
 
 
 function Verificar(){
+
+  
+ 
+
   var velocidade = document.getElementById('velocidade').value 
-  
 
-    if (showText.innerHTML == false){
-    alert('escolha uma via')
+   if (showText.innerHTML == false){
     
-  } else if (velocidade == ''){
-    alert('escolha uma velocidade')
-}   //linha de codigo responsavel por verificar se a via urbana foi selecionada e se a velocidade é maior do que 40 Km/hr
-    else if(showText.innerHTML == 'Urbana ' && velocidade <= velocidadeMin){
-          
-     setTimeout(function(){ res.innerHTML += 'Velocidade Atual: ' + velocidade  + '<br>' + 
-
-
-
-      'Via que passou: '  + nomeVia[0] + '<p>'
-
-      showText.innerHTML = ''
-      
-     },700)
-
-    
-  
+    alert('Escolha uma Via')
+  }
+    else if (velocidade == '') {
+    alert('Digite uma velocidade')
   } 
+  //linha de codigo responsavel por verificar se a via urbana foi selecionada e se a velocidade é maior do que 40 Km/hr
+  if(showText.innerHTML == 'Urbana ' && velocidade != ''){
+    let velocidadeMax = 80
+
+    let velocidadeMin = 40
+
+    console.log('No bloco de Urbanas velocidade maxima vale: ' + velocidadeMax)
+    setTimeout(function(){ res.innerHTML += 'Velocidade Atual: ' + velocidade  + '<br>' + 
+
+
+
+     'Via que passou: '  + nomeVia[0] + '<p>'  + '<hr>' 
+
+     showText.innerHTML = ''
+
+     
+     
+
+    },700)
+
+    setTimeout(function(){
+      let velocidade = document.getElementById('velocidade').value = ''
+    },600)
+  
+    
+    if (velocidade <= velocidadeMin){
+        res.innerHTML += ' Você está andando muito devagar em uma ' + nomeVia[0] + ', Você foi multado.' + '<br />'
+    }else if (velocidade >= velocidadeMax){
+      alert('ALTA VELOCIDADE, MULTADO! ')
+      res.innerHTML += 'A ' + nomeVia[0] + ' tem como velocidade máxima ' + velocidadeMax + ' Km/hr' + '<p> '
+    }
+  }  //FIM DA FUNÇÃO URBANA
+  if(showText.innerHTML == 'Arteriais ' && velocidade != ''){
+
+ let velocidadeMax = 60
+
+ let velocidadeMin = 40
+
+   console.log('No bloco de Arteriais velocidade maxima vale: ' + velocidadeMax)
+
+  setTimeout(function(){ res.innerHTML += 'Velocidade Atual: ' + velocidade  + '<br>' + 
+
+
+
+   'Via que passou: '  + nomeVia[1] + '<p>'  + '<hr>' 
+
+   showText.innerHTML = ''
+
+    
+   
+  },700)
+
+  setTimeout(function(){
+    let velocidade = document.getElementById('velocidade').value = ''
+  },600)
+  if (velocidade <= velocidadeMin){
+    res.innerHTML += ' Você está andando muito devagar em uma ' + nomeVia[1] + ', Você foi multado.' + '<br />'
+  }else if (velocidade >= velocidadeMax){
+  alert('ALTA VELOCIDADE, MULTADO! ')
+  res.innerHTML += 'A ' + nomeVia[1] + ' tem como velocidade máxima ' + velocidadeMax + ' Km/hr' + '<p> '
+  }
+}//FIM DA FUNÇÃO ARTERIAIS
+
+
+
+
+
+
+
+//   function verificar1(){
+   
+//   var verificar = document.getElementById('verificar')
+    
+
+//     velocidadeMin = 40 
+
+//     velocidadeMax = 60
+
+    
+
+//     var velocidade = document.getElementById('velocidade').value 
+    
+  
+//       if (showText.innerHTML == ''){
+//       alert('escolha uma via')
+      
+//     } else if (velocidade == ''){
+//       //alert('escolha uma velocidade')
+//   }   //linha de codigo responsavel por verificar se a via urbana foi selecionada e se a velocidade é maior do que 40 Km/hr
+//       else if(velocidade >= velocidadeMax){
+            
+//        setTimeout(function(){ res.innerHTML += 'Velocidade Atual: ' + velocidade  + '<br>' + 
+  
+  
+  
+//         'Via que passou: '  + nomeVia[1] + '<p>'
+  
+//         showText.innerHTML = ''
+        
+//        },700)
+  
+       
+    
+//     } 
+
+    
 
   //   setTimeout(function(){
         
@@ -76,29 +175,11 @@ function Verificar(){
 
 
 
-// function sistema3(){
-//   var showText = document.querySelector('#showText')
-
-//   showText.textContent = ' de Transito Rápido '
-// }
-
-// function sistema4(){
-//   var showText = document.getElementById('showText')
-
-//   showText.textContent = 'Arterial '
-// }
-
-// function sistema5(){
-//   var showText = document.getElementById('showText')
-
-//   showText.textContent = 'Coletora '
-// }
-
-// function sistema6(){
-//   var showText = document.getElementById('showText')
-
-//   showText.textContent = 'Locais '
-// }
-
+//   else if (showText.innerHTML == false){
+//     alert('escolha uma via')
+    
+//   } else if (velocidade == ''){
+//     alert('escolha uma velocidade')
+// } 
 
 }
